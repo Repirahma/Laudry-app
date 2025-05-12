@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Kasir Laundry</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="container">
+    <h1>Aplikasi Kasir Laundry</h1>
+    
+    <div class="input-section">
+      <label for="kg">Jumlah Kg:</label>
+      <input type="number" id="kg" placeholder="Masukkan jumlah kg" />
+      
+      <label for="jenis">Pilih Jenis Cuci:</label>
+      <select id="jenis">
+        <option value="kering">Cuci Kering (5rb/kg)</option>
+        <option value="setrika">Cuci Setrika (10rb/kg)</option>
+      </select>
+      
+      <button id="hitung">Hitung Harga</button>
+    </div>
+    
+    <div class="result">
+      <h2>Total Harga: <span id="total">0</span> IDR</h2>
+    </div>
+
+    <div class="history">
+      <h3>Riwayat Transaksi:</h3>
+      <ul id="history-list"></ul>
+      <button id="delete-all">Hapus Semua Riwayat</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
